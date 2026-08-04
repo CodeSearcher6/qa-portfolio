@@ -47,4 +47,4 @@ Steam screen не відкривається.
 
 ## 📎 Reference
 Case No.: 26429656 (ескаловано до спеціалізованої команди)  
-[Посилання на Jira]([https://mybeginning.atlassian.net/browse/SCRUM-6](https://mybeginning.atlassian.net/browse/SCRUM-6?atlOrigin=eyJpIjoiOTRhMDZkY2U2MDE0NGExMTgwOWU0Y2M1ZTIzMWFkNGMiLCJwIjoiaiJ9))  
+
