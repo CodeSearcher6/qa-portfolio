@@ -13,7 +13,7 @@ testing documentation.
 
 | Report | Product | Type | Highlight |
 |---|---|---|---|
-| [Ubisoft Account Recovery — Steam verification 404](bug-reports/ubisoft-account-recovery.md) | Ubisoft (account recovery) | Server-side defect | Found, isolated across 8+ environments, and reported a real defect in Ubisoft's account-recovery flow. The report was accepted and escalated to a specialized team (Case No. 26429656). |
+| [Ubisoft Account Recovery — Steam verification 404](SCRUM-6_AccountRecovery_Case/SCRUM-6_AccountRecovery.md) | Ubisoft (account recovery) | Server-side defect | Found, isolated across 8+ environments, and reported a real defect in Ubisoft's account-recovery flow. The report was accepted and escalated to a specialized team (Case No. 26429656). |
 
 Each report follows a standard structure: Summary, Preconditions, Steps to Reproduce,
 Expected vs Actual Result, Environment, Severity/Priority, and Attachments.
