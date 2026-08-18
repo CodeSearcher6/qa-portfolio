@@ -4,8 +4,8 @@ Junior QA Engineer (Manual) with a Computer Engineering background (BSc, 2026).
 I learn by building: I write C# for .NET and Unity, work with REST APIs, SQL and Git,
 and I completed a Software Testing Fundamentals course (Lviv IT School / Prometheus).
 
-This repository collects my hands-on QA work: real bug reports, SQL practice, and
-testing documentation.
+This repository collects my hands-on QA work: a real bug report, REST API testing in
+Postman, and SQL practice.
 
 ---
 
@@ -17,6 +17,22 @@ testing documentation.
 
 Each report follows a standard structure: Summary, Preconditions, Steps to Reproduce,
 Expected vs Actual Result, Environment, Severity/Priority, and Attachments.
+
+---
+
+## 🔌 REST API Testing — Postman
+
+**[→ postman/](postman/)** — collection + full documentation
+
+Nine requests against a public REST API covering the whole CRUD cycle plus negative
+scenarios: non-existent ids, wrong data types, empty required fields, and response-time
+assertions.
+
+Three cases return a status code that would be a validation defect on a production API
+(an empty required field accepted as `201`, a string accepted where a number is
+expected, `DELETE` of a non-existent record returning `200`). Those tests are written
+against the actual behaviour and labelled `KNOWN ISSUE`, so the collection stays green
+while the discrepancy stays documented instead of hidden.
 
 ---
 
@@ -41,8 +57,10 @@ testing: it shows what the application actually stored, not what the UI displays
 - **Defect isolation** — reproducing across browsers, devices and OS to confirm a
   server-side vs client-side cause
 - **Root-cause analysis** — identifying *why* a defect occurs, not just the symptom
+- **API testing** — CRUD coverage, negative scenarios, status code and JSON validation
 - **SQL** — verifying data directly in the database, checking for duplicates and
   incorrect records
+- Distinguishing a **test environment limitation** from a real product defect
 - Working with **Jira** (bug tracking) and defect life cycle
 - Testing theory: test types, test design techniques (equivalence partitioning,
   boundary value analysis, state transition), SDLC / STLC
@@ -53,7 +71,7 @@ testing: it shows what the application actually stored, not what the UI displays
 
 - **Testing:** Software Testing Fundamentals — Lviv IT School (Prometheus), certified
 - **Cloud:** AWS Academy Cloud Foundations — EC2, VPC, IAM, CloudWatch
-- **Technical:** C#, .NET, SQL / SQLite, REST APIs, Git, Linux, Postman (basics)
+- **Technical:** C#, .NET, SQL / SQLite, REST APIs, Postman, Git, Linux
 - **Projects:** see my other repositories (Unity game, WPF desktop app, Discord bot,
   .NET console app with REST API + SQLite)
 
