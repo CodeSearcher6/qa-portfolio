@@ -4,8 +4,30 @@ Junior QA Engineer (Manual) with a Computer Engineering background (BSc, 2026).
 I learn by building: I write C# for .NET and Unity, work with REST APIs, SQL and Git,
 and I completed a Software Testing Fundamentals course (Lviv IT School / Prometheus).
 
-This repository collects my hands-on QA work: a real bug report, REST API testing in
-Postman, and SQL practice.
+This repository collects my hands-on QA work: web testing on a live site, a real bug
+report, REST API testing in Postman, and SQL practice.
+
+---
+
+## 🌐 Web Testing — e-commerce flow
+
+**[→ web-testing/](web-testing/)** — test cases + smoke checklist
+
+Manual testing of the account and shopping flow on a public demo shop: registration,
+login, cart, and checkout. 29 test cases covering positive, negative and boundary
+scenarios, plus a smoke checklist with an explicit stop rule for accepting or
+rejecting a build.
+
+Four defects were found during the run, two of them Critical: **an order is placed
+with an invalid card number** — the payment form performs no format or checksum
+validation — and **a negative quantity produces a negative line total**, so a cart
+line subtracts from the order instead of adding to it. Together they allow an order
+to be completed for a reduced total with no valid payment behind it.
+
+| File | What's inside |
+|---|---|
+| [web-testing/test-cases.md](web-testing/test-cases.md) | Scope, findings with severity, and 29 test cases across authentication, cart, checkout and boundary values |
+| [web-testing/smoke-checklist.md](web-testing/smoke-checklist.md) | 31-point post-deployment pass, including a regression block for the defects found |
 
 ---
 
@@ -54,6 +76,8 @@ testing: it shows what the application actually stored, not what the UI displays
 ## 🧰 Skills demonstrated here
 
 - Writing clear, reproducible **bug reports** (standard defect-report structure)
+- **Test design** — test cases, smoke and regression checklists, equivalence
+  partitioning and boundary value analysis applied to real forms
 - **Defect isolation** — reproducing across browsers, devices and OS to confirm a
   server-side vs client-side cause
 - **Root-cause analysis** — identifying *why* a defect occurs, not just the symptom
@@ -62,8 +86,7 @@ testing: it shows what the application actually stored, not what the UI displays
   incorrect records
 - Distinguishing a **test environment limitation** from a real product defect
 - Working with **Jira** (bug tracking) and defect life cycle
-- Testing theory: test types, test design techniques (equivalence partitioning,
-  boundary value analysis, state transition), SDLC / STLC
+- Testing theory: test types, test design techniques, SDLC / STLC
 
 ---
 
