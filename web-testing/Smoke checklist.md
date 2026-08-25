@@ -4,7 +4,7 @@ A short pass over the critical paths, run after every deployment. The goal is to
 decide whether the build is stable enough to test further — not to test in depth.
 Full coverage lives in the test cases.
 
-**Expected duration:** 15–20 minutes
+**Expected duration:** 15–20 minutes.
 **Stop rule:** if any item in *Availability*, *Authentication*, *Cart* or *Checkout*
 fails, the build is rejected and deeper testing does not start.
 
