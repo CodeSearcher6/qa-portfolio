@@ -12,7 +12,8 @@ report, REST API testing in Postman, and SQL practice.
 ## 🌐 Web Testing — e-commerce flow
 
 **[→ web-testing/](web-testing/)** — test cases + smoke checklist
-**[→ web-testing/forwoman/](web-testing/forwoman/) | **Live client project** — 6 defects on a real landing page, including one blocking the registration form on desktop. Delivered as technical reports plus a prioritised summary for the business owner |
+**[→ web-testing/forwoman/](web-testing/forwoman/)** |
+**Live client project** — 6 defects on a real landing page, including one blocking the registration form on desktop. Delivered as technical reports plus a prioritised summary for the business owner |
 
 Manual testing of the account and shopping flow on a public demo shop: registration,
 login, cart, and checkout. 29 test cases covering positive, negative and boundary
