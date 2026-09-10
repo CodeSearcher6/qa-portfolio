@@ -12,8 +12,8 @@ on desktop.
 
 | File | For whom |
 |---|---|
-| [bug-reports.md](bug-reports.md) | Technical reports — steps to reproduce, severity, priority, recommendations |
-| [client-report.md](client-report.md) | Plain-language summary for the business owner, prioritised by what to fix first |
+| [bug-reports.md](fw-bug-reports-public.md) | Technical reports — steps to reproduce, severity, priority, recommendations |
+| [client-report.md](fw-client-report-public.md) | Plain-language summary for the business owner, prioritised by what to fix first |
 
 ## What made this different from a practice project
 
