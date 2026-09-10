@@ -9,28 +9,42 @@ report, REST API testing in Postman, and SQL practice.
 
 ---
 
-## 🌐 Web Testing — e-commerce flow
+## 🌐 Web Testing
 
-**[→ web-testing/](web-testing/)** — test cases + smoke checklist
+**[→ web-testing/](web-testing/)** — two projects: a live client site and a demo shop
 
-**[→ web-testing/forwoman/](web-testing/forwoman/)** |
-**Live client project** — 6 defects on a real landing page, including one blocking the registration form on desktop. Delivered as technical reports plus a prioritised summary for the business owner |
+| Project | Type | Result |
+|---|---|---|
+| [forwoman/](web-testing/forwoman/) | **Live client site** | 6 defects, one blocking the conversion flow on desktop |
+| [automationexercise/](web-testing/automationexercise/) | Demo e-commerce | 4 defects, 2 Critical, full test documentation |
 
-Manual testing of the account and shopping flow on a public demo shop: registration,
-login, cart, and checkout. 29 test cases covering positive, negative and boundary
-scenarios, plus a smoke checklist with an explicit stop rule for accepting or
-rejecting a build.
+### Live client project — forwoman.com.ua
 
-Four defects were found during the run, two of them Critical: **an order is placed
-with an invalid card number** — the payment form performs no format or checksum
-validation — and **a negative quantity produces a negative line total**, so a cart
-line subtracts from the order instead of adding to it. Together they allow an order
-to be completed for a reduced total with no valid payment behind it.
+Manual testing of a landing page, done for a real client on request. The site is a
+registration funnel, so the sign-up form is the only conversion point.
 
-| File | What's inside |
-|---|---|
-| [web-testing/test-cases.md](web-testing/test-cases.md) | Scope, findings with severity, and 29 test cases across authentication, cart, checkout and boundary values |
-| [web-testing/smoke-checklist.md](web-testing/smoke-checklist.md) | 31-point post-deployment pass, including a regression block for the defects found |
+The most important finding: **a decorative image was rendered on top of the
+registration form and intercepted clicks**, so desktop visitors physically could not
+fill in the fields. The owner was unaware of it.
+
+Delivered as two documents — technical reports for whoever implements the fixes, and
+a plain-language summary for the business owner explaining what each defect costs and
+what to fix first.
+
+### Demo e-commerce — automationexercise.com
+
+29 test cases across registration, login, cart and checkout — positive, negative and
+boundary scenarios — plus a 31-point smoke checklist with an explicit rule for
+accepting or rejecting a build.
+
+Four defects found, two Critical: **an order is placed with an invalid card number**
+— the payment form performs no format or checksum validation — and **a negative
+quantity produces a negative line total**, so a cart line subtracts from the order
+instead of adding to it. Together they allow an order to be completed for a reduced
+total with no valid payment behind it.
+
+The second defect came from exploratory testing — entering values into the quantity
+field that no test case anticipated.
 
 ---
 
